@@ -29,7 +29,7 @@ $ python manage.py shell
 >>> schoolkid = dbfix.get_schoolkid('Фролов Иван')
 >>> schoolkid.full_name
 'Фролов Иван Григорьевич'
->>> fix_mark(s)
+>>> dbfix.fix_mark(schoolkid)
 >>>
 ```
 

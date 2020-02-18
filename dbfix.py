@@ -38,7 +38,8 @@ COMMENDATIONS = [
 
 def get_schoolkid(kid_name):
     try:
-        return Schoolkid.objects.filter(full_name__contains=kid_name).get()
+        #return Schoolkid.objects.filter(full_name__contains=kid_name).get()
+        return Schoolkid.objects.get(full_name__contains=kid_name)
     except ObjectDoesNotExist:
         print(f'Школьника {kid_name} не найдено в базе')
         exit(2)
