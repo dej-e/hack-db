@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## 2. Описание функций
 
-`get_schollkid(kid_name)` - в качестве аргумента принимает строку с именем ученика, возвращает объект с учетной записью ученика.
+`get_schoolkid(kid_name)` - в качестве аргумента принимает строку с именем ученика, возвращает объект с учетной записью ученика.
 
 `fix_mark(schoolkid)` - в качестве аргумента принимает учетную запись ученика, находит все оценки 2 и 3 и исправляет на 5.
 
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 $ python manage.py shell
 >>> from datacenter import dbfix
->>> schoolkid = script.get_schollkid('Фролов Иван')
+>>> schoolkid = dbfix.get_schoolkid('Фролов Иван')
 >>> schoolkid.full_name
 'Фролов Иван Григорьевич'
 >>> fix_mark(s)

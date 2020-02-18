@@ -36,7 +36,7 @@ COMMENDATIONS = [
 ]
 
 
-def get_schollkid(kid_name):
+def get_schoolkid(kid_name):
     try:
         return Schoolkid.objects.filter(full_name__contains=kid_name).get()
     except ObjectDoesNotExist:
